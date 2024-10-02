@@ -40,16 +40,6 @@ const NavBar = ({
     setIsPriorityOptionsOpen(false); // Close Priority options by default
   };
 
-  // Toggle the Status options (inside Grouping)
-  const toggleStatusOptions = () => {
-    setIsStatusOptionsOpen(!isStatusOptionsOpen);
-  };
-
-  // Toggle the Priority options (inside Ordering)
-  const togglePriorityOptions = () => {
-    setIsPriorityOptionsOpen(!isPriorityOptionsOpen);
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -57,7 +47,7 @@ const NavBar = ({
         <div className="display-container" onClick={toggleDisplayDropdown}>
           <img src={displayLogo} alt="Logo" className="logo" />
           <span>Display</span>
-          <img src={vbutton} className="chevron-icon" />
+          <img src={vbutton} alt="img" className="chevron-icon" />
         </div>
 
         {/* Dropdown for Display (Containing Grouping and Ordering) */}
@@ -67,7 +57,7 @@ const NavBar = ({
               <span className="title">Grouping</span>
               <div className="select-box" onClick={toggleGroupingDropdown}>
                 <span>Status</span>
-                <img src={vbutton} className="chevron-icon" />
+                <img src={vbutton} alt="img" className="chevron-icon" />
               </div>
             </div>
 
@@ -75,7 +65,7 @@ const NavBar = ({
               <span className="title">Ordering</span>
               <div className="select-box" onClick={toggleOrderingDropdown}>
                 <span>Priority</span>
-                <img src={vbutton} className="chevron-icon" />
+                <img src={vbutton} alt="img" className="chevron-icon" />
               </div>
             </div>
           </div>

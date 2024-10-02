@@ -9,7 +9,7 @@ const Card = ({ id, title, status, priority, userId, userName, tag }) => {
         <div className="card-header">
           <span className="ticket-id">{id}</span>
           <div>
-            <img src={avatar} className="user-avatar-box" />
+            <img src={avatar} alt="img" className="user-avatar-box" />
           </div>
           
         </div>

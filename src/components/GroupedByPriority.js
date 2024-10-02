@@ -6,8 +6,6 @@ import medium from "../assets/Img - Medium Priority.svg";
 import urgent from "../assets/SVG - Urgent Priority colour.svg";
 import nopriority from "../assets/No-priority.svg";
 import add from "../assets/add.svg";
-import Done from "../assets/Done.svg";
-import inprogress from "../assets/in-progress.svg";
 import dot from "../assets/3 dot menu.svg";
 import { getUserName } from "../utils/grouping";
 
