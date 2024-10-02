@@ -1,4 +1,5 @@
 import React from "react";
+import avatar from "../assets/avatar.png";
 import './Card.css'
 
 const Card = ({ id, title, status, priority, userId, userName, tag }) => {
@@ -7,8 +8,8 @@ const Card = ({ id, title, status, priority, userId, userName, tag }) => {
       <div className="card" key={id}>
         <div className="card-header">
           <span className="ticket-id">{id}</span>
-          <div className="user-avatar-box">
-            {/* <img src="" className="user-avatar" /> */}
+          <div>
+            <img src={avatar} className="user-avatar-box" />
           </div>
           
         </div>

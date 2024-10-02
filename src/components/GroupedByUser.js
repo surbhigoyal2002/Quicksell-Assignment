@@ -1,14 +1,27 @@
 
 import React from "react";
 import Card from "./Card";
+import avatar from "../assets/avatar.png";
+import add from "../assets/add.svg";
+import dot from "../assets/3 dot menu.svg";
 import { getUserName } from "../utils/grouping";
 
 const GroupedByUser = ({ groupedTasksByUser, users }) => {
   return (
     <div style={{ display: "flex", gap: "0px" }}>
       {Object.keys(groupedTasksByUser).map((userName) => (
-        <div key={userName} style={{ width: "280px" }}>
-          <h3>User: {userName}</h3>
+        <div key={userName} style={{ display: "flex", width: "280px", flexDirection:"column"}}>
+          <div style={{ display: "flex", flexDirection:"row", justifyContent:"space-between"}}>
+          <div style={{display:"flex", marginLeft:"20px", alignItems: "center", gap:"8px"}}>
+            <div> <img src={avatar} className="user-avatar-box" /> </div>
+            <h3 className="card-group">{userName}</h3>
+          </div>
+          <div style={{display:"flex", marginRight:"20px", alignItems: "center", gap:"8px"}}>
+            <div> <img src={add}/> </div>
+            <div> <img src={dot}/> </div>
+          </div>
+          </div>
+          
           {groupedTasksByUser[userName].map((task) => (
             <Card
               key={task.id}

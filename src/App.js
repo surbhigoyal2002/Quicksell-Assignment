@@ -69,7 +69,7 @@ const App = () => {
   const groupedTasksByUser = groupByUser(tasks, users);
 
   return (
-    <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", gap: "0px", flexWrap: "wrap" }}>
       <Navbar
         onSortByTitle={handleSortByTitle}
         onSortByPriority={handleSortByPriority}
