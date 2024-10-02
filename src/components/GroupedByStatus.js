@@ -15,12 +15,12 @@ const GroupedByStatus = ({ groupedTasksByStatus, users }) => {
         <div key={status} style={{ width: "300px" }}>
           <div style={{ display: "flex", flexDirection:"row", justifyContent:"space-between"}}>
           <div style={{display:"flex", marginLeft:"20px", alignItems: "center", gap:"8px"}}>
-            <div> <img src={status === "Todo" ? todo : status === "In progress" ? inprogress : Backlog } /> </div>
+            <div> <img src={status === "Todo" ? todo : status === "In progress" ? inprogress : Backlog } alt = "img" /> </div>
             <h3 className="card-group">{status}</h3>
           </div>
           <div style={{display:"flex", marginRight:"20px", alignItems: "center", gap:"8px"}}>
-            <div> <img src={add}/> </div>
-            <div> <img src={dot}/> </div>
+            <div> <img src={add} alt = "img"/> </div>
+            <div> <img src={dot} alt = "img"/> </div>
           </div>
           </div>
           {groupedTasksByStatus[status].map((task) => (

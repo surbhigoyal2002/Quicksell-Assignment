@@ -18,12 +18,12 @@ const GroupedByPriority = ({ groupedTasksByPriority, users }) => {
         <div key={priority} style={{ width: "280px" }}>
           <div style={{ display: "flex", flexDirection:"row", justifyContent:"space-between"}}>
           <div style={{display:"flex", marginLeft:"20px", alignItems: "center", gap:"8px"}}>
-            <div> <img src={priority === "4" ? urgent : priority === "3" ? high : priority === "2" ? medium : priority === "1" ? low : nopriority } /> </div>
+            <div> <img src={priority === "4" ? urgent : priority === "3" ? high : priority === "2" ? medium : priority === "1" ? low : nopriority } alt = "img"/> </div>
             <h3 className="card-group">{priority === "4" ? "Urgent" : priority === "3" ? "High" : priority === "2" ? "Medium" : priority === "1" ? "Low" : "No priority" }</h3>
           </div>
           <div style={{display:"flex", marginRight:"20px", alignItems: "center", gap:"8px"}}>
-            <div> <img src={add}/> </div>
-            <div> <img src={dot}/> </div>
+            <div> <img src={add} alt = "img"/> </div>
+            <div> <img src={dot} alt = "img"/> </div>
           </div>
           </div>
           {groupedTasksByPriority[priority].map((task) => (

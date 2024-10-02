@@ -13,12 +13,12 @@ const GroupedByUser = ({ groupedTasksByUser, users }) => {
         <div key={userName} style={{ display: "flex", width: "280px", flexDirection:"column"}}>
           <div style={{ display: "flex", flexDirection:"row", justifyContent:"space-between"}}>
           <div style={{display:"flex", marginLeft:"20px", alignItems: "center", gap:"8px"}}>
-            <div> <img src={avatar} className="user-avatar-box" /> </div>
+            <div> <img src={avatar} alt = "img" className="user-avatar-box" /> </div>
             <h3 className="card-group">{userName}</h3>
           </div>
           <div style={{display:"flex", marginRight:"20px", alignItems: "center", gap:"8px"}}>
-            <div> <img src={add}/> </div>
-            <div> <img src={dot}/> </div>
+            <div> <img src={add} alt = "img"/> </div>
+            <div> <img src={dot} alt = "img"/> </div>
           </div>
           </div>
           
