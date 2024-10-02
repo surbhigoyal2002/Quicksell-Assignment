@@ -1,0 +1,124 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    padding: 20px;
+  }
+  
+  .card {
+    width: 300px;  /* Fixed width */
+    height: auto; /* Auto height to accommodate wrapped text */
+    padding: 10px; /* Slightly reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative; /* For positioning avatar */
+  }
+  
+  /* ID and user avatar in the same line */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .user-avatar-box {
+    width: 20px;  /* Smaller avatar */
+    height: 20px; /* Smaller height */
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-left: auto;
+  }
+  /* .user-avatar {
+    
+  } */
+  
+  .ticket-id {
+    font-size: 10px; /* Smaller grey ID */
+    color: grey;
+    font-weight: 500;
+  }
+  
+  .card-body {
+    display: flex;
+    align-items: flex-start; /* Align checkbox to the top */
+    margin-top: 10px; /* Reduced space between checkbox and title */
+  }
+  
+  /* Circular checkbox */
+  .custom-checkbox {
+    width: 12px; /* Smaller checkbox */
+    height: 12px; /* Smaller checkbox */
+    margin-right: 4px; /* Reduced spacing between checkbox and title */
+    cursor: pointer;
+    border-radius: 50%;
+    appearance: none;
+    background-color: white; /* Changed to white */
+    border: 2px solid #999;
+    position: relative;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #007bff; /* Blue color when checked */
+    border-color: #007bff;
+  }
+  
+  .custom-checkbox:checked::after {
+    content: '✓'; /* Standard tickmark */
+    position: absolute;
+    left: 1px; /* Adjusted position for tick */
+    top: -1px; /* Adjusted position for tick */
+    font-size: 8px; /* Smaller tickmark */
+    color: white;
+  }
+  
+  .ticket-title {
+    font-size: 15px; /* Smaller title font */
+    font-weight: bold;
+    margin: 0;
+    white-space: normal; /* Allow wrapping */
+    overflow: hidden; /* Cuts off text that is too long */
+    text-overflow: ellipsis; /* Adds '...' to indicate overflow */
+    flex: 1; /* Allows title to take up remaining space */
+  }
+  
+  /* Footer: Aligns the tag and logo */
+  .card-footer {
+    display: flex;
+    width: 53%;
+    height: 20px;
+    align-items: center;
+    margin-top: 12px; /* Reduced margin to align with other content */
+    padding: 2.5px; /* Padding for the tag container */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: white; /* White background */
+    justify-content: flex-start; /* Align items to the start */
+  }
+  
+  .logo-image {
+    width: 16px; /* Slightly smaller logo */
+    height: 16px; /* Slightly smaller height */
+    margin-right: 4px; /* Reduced spacing between logo and tag */
+  }
+  
+  .grey-dot {
+    font-size: 14px; /* Slightly smaller dot */
+    color: grey;
+    margin-right: 4px; /* Reduced margin */
+  }
+  
+  .ticket-tag {
+    font-size: 15px; /* Smaller tag font */
+    color: grey;
+  }
+  .ticket-id {
+    font-size: 14px; /* Smaller tag font */
+    font-weight: 700;
+    color: grey;
+  }

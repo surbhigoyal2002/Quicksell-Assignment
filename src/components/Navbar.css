@@ -1,0 +1,131 @@
+.navbar {
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 25px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .display-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .chevron-icon {
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: 37px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    cursor: pointer;
+    
+  }
+
+  .right-dropdown-item {
+    background-color: white; /* White background */
+    color: #333; /* Dark text color for contrast */
+    border: none; /* No border */
+    padding: 6px 12px; /* Reduced padding for smaller height */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Slightly smaller font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+.right-dropdown-item:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Active effect */
+.right-dropdown-item:active {
+    transform: translateY(0); /* Return to original position on click */
+}
+
+
+
+  .right-dropdown-menu {
+    position: absolute;
+    top: 70px;
+    left: 305px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    
+  }
+  .select-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    border-radius: 6px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+
+   
+  
+  .chevron-icon {
+    margin-right: 10px;
+    color: rgb(88, 85, 85);
+    font-size: 12px;
+  }
+  
+
+  .select-box:hover .chevron-icon {
+    color: rgb(51, 49, 49);
+  }
+  
+  .title{
+      font-weight: 550;
+      color: rgb(151, 147, 147);
+  }
